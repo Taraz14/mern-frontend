@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "nama":"Dimas",
+        "film":"Spiderman No Way Home",
+        "status":"sudah dipesan",
+        "tanggal_pesan":"01-01-2022"
+    },
+    {
+        "id":2,
+        "nama":"Dimas",
+        "film":"Spiderman No Way Home",
+        "status":"sudah dipesan",
+        "tanggal_pesan":"01-01-2022"
+    },
+    {
+        "id":3,
+        "nama":"Dimas",
+        "film":"Spiderman No Way Home",
+        "status":"sudah dipesan",
+        "tanggal_pesan":"01-01-2022"
+    },
+    {
+        "id":4,
+        "nama":"Dimas",
+        "film":"Spiderman No Way Home",
+        "status":"sudah dipesan",
+        "tanggal_pesan":"01-01-2022"
+    }
+]
