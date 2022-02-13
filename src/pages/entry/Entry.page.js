@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Carousel from "react-bootstrap/Carousel";
 
 import { LoginForm } from "../../component/auth/Login.comp";
 import { ResetPassword } from "../../component/password-reset/PasswordReset.comp";

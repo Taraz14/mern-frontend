@@ -1,18 +1,12 @@
 import React from "react";
 
-import {
-  Navbar,
-  NavDropdown,
-  Container,
-  Nav,
-  NavbarBrand,
-} from "react-bootstrap";
+import { Navbar, NavDropdown, Container, Nav } from "react-bootstrap";
 
 export const Header = () => {
   return (
     <Navbar bg="warning" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home">D-Mern</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

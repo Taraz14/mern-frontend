@@ -6,9 +6,16 @@ import { TicketTable } from "../../component/tabel-component/TicketTable.comp";
 
 import tickets from "../../component/tabel-component/dummy-tickets.json";
 
+import { PageBreadcrumb } from "../../component/breadcrumb/PageBreadcrumb.comp";
+
 export const Dashboard = () => {
   return (
     <Container>
+      <Row>
+        <Col>
+          <PageBreadcrumb page="Dashboard" />
+        </Col>
+      </Row>
       <Row>
         <Col className="text-center mt-5 mb-2">
           <Button
