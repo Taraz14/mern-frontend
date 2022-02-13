@@ -8,22 +8,22 @@
     },
     {
         "id":2,
-        "nama":"Dimas",
-        "film":"Spiderman No Way Home",
+        "nama":"Spidey",
+        "film":"Spiderman Far From Home",
         "status":"sudah dipesan",
         "tanggal_pesan":"01-01-2022"
     },
     {
         "id":3,
-        "nama":"Dimas",
-        "film":"Spiderman No Way Home",
+        "nama":"Bona",
+        "film":"Spiderman New Home",
         "status":"sudah dipesan",
         "tanggal_pesan":"01-01-2022"
     },
     {
         "id":4,
-        "nama":"Dimas",
-        "film":"Spiderman No Way Home",
+        "nama":"Videx",
+        "film":"Venom",
         "status":"sudah dipesan",
         "tanggal_pesan":"01-01-2022"
     }

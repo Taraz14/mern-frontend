@@ -5,7 +5,9 @@ import "./App.css";
 
 // import { Dashboard } from "./pages/dashboard/Dashboard.page";
 
-import { AddTicket } from "./pages/tiket-baru/AddTicket.page";
+// import { AddTicket } from "./pages/tiket-baru/AddTicket.page";
+
+import { TicketList } from "./pages/tiket-list/TicketList.page";
 
 import { DefaultLayout } from "./layout/DefaultLayout";
 
@@ -15,7 +17,8 @@ function App() {
       {/* <Entry /> */}
       <DefaultLayout>
         {/* <Dashboard /> */}
-        <AddTicket />
+        {/* <AddTicket /> */}
+        <TicketList />
       </DefaultLayout>
     </div>
   );
