@@ -1,12 +1,9 @@
 import React from "react";
-
 import { Container, Row, Col, Button } from "react-bootstrap";
-
 import { TicketTable } from "../../component/tabel-component/TicketTable.comp";
-
 import tickets from "../../component/tabel-component/dummy-tickets.json";
-
 import { PageBreadcrumb } from "../../component/breadcrumb/PageBreadcrumb.comp";
+import { Link } from "react-router-dom";
 
 export const Dashboard = () => {
   return (
@@ -18,12 +15,14 @@ export const Dashboard = () => {
       </Row>
       <Row>
         <Col className="text-center mt-5 mb-2">
-          <Button
-            variant="warning"
-            style={{ fontSize: "2rem", padding: "10px 30px" }}
-          >
-            Tambah tiket baru
-          </Button>
+          <Link to="/add-ticket">
+            <Button
+              variant="warning"
+              style={{ fontSize: "2rem", padding: "10px 30px" }}
+            >
+              Tambah tiket baru
+            </Button>
+          </Link>
         </Col>
       </Row>
 
@@ -39,7 +38,7 @@ export const Dashboard = () => {
       </Row>
       <hr />
       <Row>
-        <Col className="recent-ticket">
+        <Col className="recent-ticket mb-4">
           <TicketTable tickets={tickets} />
         </Col>
       </Row>

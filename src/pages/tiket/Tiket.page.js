@@ -4,12 +4,22 @@ import { PageBreadcrumb } from "../../component/breadcrumb/PageBreadcrumb.comp";
 import tickets from "../../component/tabel-component/dummy-tickets.json";
 import { RekamPesan } from "../../component/rekam-pesan/RekamPesan.comp";
 import { TiketUpdate } from "../../component/tiket-update/TiketUpdate.comp";
+import { useParams } from "react-router-dom";
 
-const ticket = tickets[0];
+// const ticket = tickets[0];
 export const Tiket = () => {
+  const { tId } = useParams("");
   const [message, setMessage] = useState("");
+  const [ticket, setTicket] = useState("");
 
-  useEffect(() => {}, [message]);
+  useEffect(() => {
+    for (let i = 0; i < tickets.length; i++) {
+      if (tickets[i].id == tId) {
+        setTicket(tickets[i]);
+        continue;
+      }
+    }
+  }, [message]);
 
   const handleOnChange = (e) => {
     setMessage(e.target.value);
@@ -28,6 +38,7 @@ export const Tiket = () => {
       </Row>
       <Row>
         <Col className="text-weight-bolder text-secondary">
+          {tId}
           <div className="nama">Nama : {ticket.nama}</div>
           <div className="film">Film : {ticket.film}</div>
           <div className="tanggal">Tanggal : {ticket.tanggal_pesan}</div>
@@ -37,9 +48,7 @@ export const Tiket = () => {
         </Col>
       </Row>
       <Row>
-        <Col>
-          <RekamPesan msg={ticket.history} />
-        </Col>
+        <Col>{ticket.history && <RekamPesan msg={ticket.history} />}</Col>
       </Row>
       <hr />
       <Row className="mt-4">

@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from "react";
-
 import { Container, Row, Col, Button } from "react-bootstrap";
-
 import { PageBreadcrumb } from "../../component/breadcrumb/PageBreadcrumb.comp";
-
 import { SearchForm } from "../../component/search-form/SearchForm.comp";
-
 import { TicketTable } from "../../component/tabel-component/TicketTable.comp";
-
 import tickets from "../../component/tabel-component/dummy-tickets.json";
+import { Link } from "react-router-dom";
 
 export const TicketList = () => {
   const [str, setStr] = useState("");
@@ -40,7 +36,9 @@ export const TicketList = () => {
       </Row>
       <Row className="mt-4">
         <Col>
-          <Button variant="warning">Tambah Tiket</Button>
+          <Link to="/add-ticket">
+            <Button variant="warning">Tambah Tiket</Button>
+          </Link>
         </Col>
         <Col className="text-right">
           <SearchForm handleOnChange={handleOnChange} str={str} />
