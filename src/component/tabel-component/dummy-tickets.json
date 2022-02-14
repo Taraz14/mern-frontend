@@ -4,7 +4,34 @@
         "nama":"Dimas",
         "film":"Spiderman No Way Home",
         "status":"sudah dipesan",
-        "tanggal_pesan":"01-01-2022"
+        "tanggal_pesan":"01-01-2022",
+        "history":[
+            {
+                "date": "2022-12-08",
+                "message": "Percobaan",
+                "messageBy": "client"
+            },
+            {
+                "date": "2022-12-09",
+                "message": "Percobaan",
+                "messageBy": "client"
+            },
+            {
+                "date": "2022-12-09",
+                "message": "Percobaan",
+                "messageBy": "client"
+            },
+            {
+                "date": "2022-12-11",
+                "message": "Percobaan",
+                "messageBy": "client"
+            },
+            {
+                "date": "2022-12-12",
+                "message": "Percobaan",
+                "messageBy": "client"
+            }
+        ]
     },
     {
         "id":2,

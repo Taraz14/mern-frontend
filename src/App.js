@@ -7,9 +7,10 @@ import "./App.css";
 
 // import { AddTicket } from "./pages/tiket-baru/AddTicket.page";
 
-import { TicketList } from "./pages/tiket-list/TicketList.page";
+// import { TicketList } from "./pages/tiket-list/TicketList.page";
 
 import { DefaultLayout } from "./layout/DefaultLayout";
+import { Tiket } from "./pages/tiket/Tiket.page";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       <DefaultLayout>
         {/* <Dashboard /> */}
         {/* <AddTicket /> */}
-        <TicketList />
+        {/* <TicketList /> */}
+        <Tiket />
       </DefaultLayout>
     </div>
   );
